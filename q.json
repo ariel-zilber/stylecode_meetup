@@ -1,0 +1,948 @@
+{
+    "data": [
+        {
+            "question": "What is the maximum line length recommended by the Google Python Style Guide?",
+            "options": ["79 characters", "80 characters", "100 characters", "120 characters"],
+            "answer": "79 characters",
+            "topic": "Formatting"
+        },
+        {
+            "question": "How many spaces should be used for indentation in Python?",
+            "options": ["2", "3", "4", "8"],
+            "answer": "4",
+            "topic": "Formatting"
+        },
+        {
+            "question": "True or False: Tabs should be used for indentation whenever possible.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Formatting"
+        },
+        {
+            "question": "Which of the following is the correct way to import multiple modules?",
+            "options": ["import os, sys", "import os; import sys", "import os\nimport sys", "from os import *; from sys import *"],
+            "answer": "import os\nimport sys",
+            "topic": "Imports"
+        },
+        {
+            "question": "How should you name a function in Python?",
+            "options": ["myFunction()", "myFunction", "my_function", "MyFunction"],
+            "answer": "my_function",
+            "topic": "Naming"
+        },
+        {
+            "question": "What is the preferred way to format strings in Python 3.6+?",
+            "options": ["'Hello, %s!' % name", "'Hello, {}!'.format(name)", "f'Hello, {name}!'", "All are equally preferred"],
+            "answer": "f'Hello, {name}!'",
+            "topic": "Strings"
+        },
+        {
+            "question": "True or False: You should always use double quotes for strings.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Strings"
+        },
+        {
+            "question": "Which of the following is the correct way to define a class?",
+            "options": ["class myClass:", "class myClass():", "class MyClass:", "class MyClass():"],
+            "answer": "class MyClass:",
+            "topic": "Naming"
+        },
+        {
+            "question": "How should constants be named in Python?",
+            "options": ["myConstant", "MY_CONSTANT", "MyConstant", "my_constant"],
+            "answer": "MY_CONSTANT",
+            "topic": "Naming"
+        },
+        {
+            "question": "What should be the maximum length of a docstring summary line?",
+            "options": ["79 characters", "80 characters", "100 characters", "120 characters"],
+            "answer": "79 characters",
+            "topic": "Docstrings"
+        },
+        {
+            "question": "True or False: Docstrings are optional for private functions.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "topic": "Docstrings"
+        },
+        {
+            "question": "Which is the correct way to check if a variable is None?",
+            "options": ["if var == None:", "if var is None:", "if not var:", "if None == var:"],
+            "answer": "if var is None:",
+            "topic": "Booleans"
+        },
+        {
+            "question": "How should you handle unused function arguments?",
+            "options": ["Delete them", "Rename them to _", "Comment them out", "Ignore them"],
+            "answer": "Rename them to _",
+            "topic": "Function Arguments"
+        },
+        {
+            "question": "True or False: You should use a comma after the last element in a multiline list.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "topic": "Formatting"
+        },
+        {
+            "question": "Which of the following is the correct way to write a multiline if statement?",
+            "options": [
+                "if (condition1 and\n    condition2):",
+                "if condition1 and \\ \n   condition2:",
+                "if condition1 and \ncondition2:",
+                "if condition1 and condition2:"
+            ],
+            "answer": "if (condition1 and\n    condition2):",
+            "topic": "Formatting"
+        },
+        {
+            "question": "How many blank lines should be between top-level function and class definitions?",
+            "options": ["0", "1", "2", "3"],
+            "answer": "2",
+            "topic": "Formatting"
+        },
+        {
+            "question": "Which of the following is the correct way to import a specific function from a module?",
+            "options": ["import module.function", "from module import function", "import module import function", "import function from module"],
+            "answer": "from module import function",
+            "topic": "Imports"
+        },
+        {
+            "question": "True or False: Wildcard imports (from module import *) are encouraged.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Imports"
+        },
+        {
+            "question": "How should you name a method in a class?",
+            "options": ["myMethod()", "myMethod", "my_method", "MyMethod"],
+            "answer": "my_method",
+            "topic": "Naming"
+        },
+        {
+            "question": "What is the purpose of the 'self' parameter in a method?",
+            "options": ["It is a placeholder", "It refers to the class", "It refers to the instance of the object", "It is optional"],
+            "answer": "It refers to the instance of the object",
+            "topic": "Classes"
+        },
+        {
+            "question": "Which of the following is the correct way to raise an exception?",
+            "options": ["raise Exception('message')", "raise new Exception('message')", "throw Exception('message')", "exception Exception('message')"],
+            "answer": "raise Exception('message')",
+            "topic": "Exceptions"
+        },
+        {
+            "question": "True or False: You should catch general exceptions whenever possible.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Exceptions"
+        },
+        {
+            "question": "What is the preferred way to handle file operations?",
+            "options": ["Using try...finally", "Using file.open() and file.close()", "Using the 'with' statement", "All are equally preferred"],
+            "answer": "Using the 'with' statement",
+            "topic": "Files and Resources"
+        },
+        {
+            "question": "How should you write a TODO comment?",
+            "options": ["# TODO: Fix this", "# TODO - Fix this", "# TODO(author): Fix this", "# TODO: [Issue 12345] Fix this"],
+            "answer": "# TODO: [Issue 12345] Fix this",
+            "topic": "Comments"
+        },
+        {
+            "question": "True or False: Comments should be used to explain obvious code.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Comments"
+        },
+        {
+            "question": "Which of the following is the correct way to annotate a function that returns a string or None?",
+            "options": ["def my_func() -> str | None:", "def my_func() -> Optional[str]:", "def my_func() -> Union[str, None]:", "All are correct"],
+            "answer": "All are correct",
+            "topic": "Typing"
+        },
+        {
+            "question": "What is the preferred way to annotate a list of strings?",
+            "options": ["list[str]", "List[str]", "list of strings", "Any"],
+            "answer": "List[str]",
+            "topic": "Typing"
+        },
+        {
+            "question": "True or False: Type hints are enforced at runtime.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Typing"
+        },
+        {
+            "question": "How should you name a private variable in a class?",
+            "options": ["_my_variable", "my_variable_", "__my_variable", "myVariable"],
+            "answer": "__my_variable",
+            "topic": "Naming"
+        },
+        {
+            "question": "What is the purpose of a property in Python?",
+            "options": ["To define a constant attribute", "To make an attribute read-only", "To control attribute access", "To create a static method"],
+            "answer": "To control attribute access",
+            "topic": "Properties"
+        },
+        {
+            "question": "True or False: Properties should be used to replace all getter and setter methods.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Properties"
+        },
+        {
+            "question": "Which of the following is the correct way to use a decorator?",
+            "options": ["@my_decorator\ndef my_function():", "def my_function() @my_decorator:", "my_decorator(my_function())", "my_function().my_decorator"],
+            "answer": "@my_decorator\ndef my_function():",
+            "topic": "Decorators"
+        },
+        {
+            "question": "When should you use a static method?",
+            "options": ["Always", "When it doesn't access instance or class data", "When it only accesses class data", "Never"],
+            "answer": "When it doesn't access instance or class data",
+            "topic": "Decorators"
+        },
+        {
+            "question": "True or False: You should use list comprehensions for complex loops.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Comprehensions"
+        },
+        {
+            "question": "Which is the preferred container type for a function parameter annotation?",
+            "options": ["list", "tuple", "dict", "Sequence"],
+            "answer": "Sequence",
+            "topic": "Typing"
+        },
+        {
+            "question": "How should binary operators be surrounded by spaces?",
+            "options": ["No spaces", "One space", "Two spaces", "Any number of spaces"],
+            "answer": "One space",
+            "topic": "Formatting"
+        },
+        {
+            "question": "True or False: You can use '\\' for line continuation.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Formatting"
+        },
+        {
+            "question": "What is the recommended maximum line length for comments?",
+            "options": ["79 characters", "72 characters", "80 characters", "No limit"],
+            "answer": "72 characters",
+            "topic": "Comments"
+        },
+        {
+            "question": "How should you format a docstring for a function?",
+            "options": [
+                "One-line summary",
+                "Multiline description",
+                "One-line summary, followed by a blank line, then a detailed description",
+                "Any format is acceptable"
+            ],
+            "answer": "One-line summary, followed by a blank line, then a detailed description",
+            "topic": "Docstrings"
+        },
+        {
+            "question": "True or False: You should use assertions to validate input in production code.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Exceptions"
+        },
+        {
+            "question": "Which is the correct way to define a class method?",
+            "options": [
+                "def my_method(self):",
+                "def my_method(cls):",
+                "@classmethod\ndef my_method(self):",
+                "@classmethod\ndef my_method(cls):"
+            ],
+            "answer": "@classmethod\ndef my_method(cls):",
+            "topic": "Classes"
+        },
+        {
+            "question": "How should you name a module in Python?",
+            "options": ["MyModule", "my_module", "My_Module", "mymodule"],
+            "answer": "my_module",
+            "topic": "Naming"
+        },
+        {
+            "question": "True or False: You should use single quotes for all strings.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Strings"
+        },
+        {
+            "question": "Which of the following is the correct way to use the 'with' statement?",
+            "options": [
+                "with open('file.txt'):\n    # code",
+                "open('file.txt') as f:\n    # code",
+                "with open('file.txt') as f:\n    # code",
+                "with open('file.txt') { \n  //code\n }"
+            ],
+            "answer": "with open('file.txt') as f:\n    # code",
+            "topic": "Files and Resources"
+        },
+        {
+            "question": "How many spaces should be around assignment operators?",
+            "options": ["0", "1", "2", "Any"],
+            "answer": "1",
+            "topic": "Formatting"
+        },
+        {
+            "question": "True or False: You should always provide a reason in a TODO comment.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "topic": "Comments"
+        },
+        {
+            "question": "Which is the correct way to annotate a function that takes a string and returns nothing?",
+            "options": [
+                "def my_func(s: str) -> None:",
+                "def my_func(s: str):",
+                "def my_func(s: str) -> void:",
+                "def my_func(s: str) -> NoReturn:"
+            ],
+            "answer": "def my_func(s: str) -> None:",
+            "topic": "Typing"
+        },
+        {
+            "question": "What is the preferred way to represent a boolean value?",
+            "options": ["1 and 0", "True and False", "TRUE and FALSE", "Any"],
+            "answer": "True and False",
+            "topic": "Booleans"
+        },
+        {
+            "question": "True or False: You should use parentheses around conditions in if statements.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Formatting"
+        },
+        {
+            "question": "How should you name a package in Python?",
+            "options": ["MyPackage", "my_package", "My_Package", "mypackage"],
+            "answer": "mypackage",
+            "topic": "Naming"
+        },
+        {
+            "question": "Which of the following is the correct way to define a static method?",
+            "options": [
+                "def my_method():",
+                "@staticmethod\ndef my_method(self):",
+                "@staticmethod\ndef my_method():",
+                "static def my_method():"
+            ],
+            "answer": "@staticmethod\ndef my_method():",
+            "topic": "Decorators"
+        },
+        {
+            "question": "True or False: You should use list comprehensions for simple loops.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "topic": "Comprehensions"
+        },
+        {
+            "question": "How should you handle imports in a file?",
+            "options": [
+                "Group them all at the top",
+                "Group them by module",
+                "Group them by standard library, third-party, and local",
+                "Import as needed"
+            ],
+            "answer": "Group them by standard library, third-party, and local",
+            "topic": "Imports"
+        },
+        {
+            "question": "What is the recommended way to break long lines?",
+            "options": [
+                "Using backslashes",
+                "Using parentheses",
+                "Using commas",
+                "Any of the above"
+            ],
+            "answer": "Using parentheses",
+            "topic": "Formatting"
+        },
+        {
+            "question": "True or False: You should add a blank line after a class definition.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "topic": "Formatting"
+        },
+        {
+            "question": "Which of the following is the correct way to annotate a variable that can be a string or None?",
+            "options": [
+                "str | None",
+                "Optional[str]",
+                "Union[str, None]",
+                "All of the above"
+            ],
+            "answer": "All of the above",
+            "topic": "Typing"
+        },
+        {
+            "question": "How should you format a function docstring?",
+            "options": [
+                "Just a short description",
+                "Detailed explanation",
+                "Short description, blank line, detailed explanation",
+                "Any format is acceptable"
+            ],
+            "answer": "Short description, blank line, detailed explanation",
+            "topic": "Docstrings"
+        },
+        {
+            "question": "True or False: You should use assertions to check for internal errors.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "topic": "Exceptions"
+        },
+        {
+            "question": "Which is the correct way to define an instance method?",
+            "options": [
+                "def my_method():",
+                "def my_method(self):",
+                "@classmethod\ndef my_method(self):",
+                "instance def my_method(self):"
+            ],
+            "answer": "def my_method(self):",
+            "topic": "Classes"
+        },
+        {
+            "question": "How should you name a local variable in a function?",
+            "options": ["myVariable", "my_variable", "MyVariable", "MY_VARIABLE"],
+            "answer": "my_variable",
+            "topic": "Naming"
+        },
+        {
+            "question": "True or False: You should use double quotes for docstrings.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "topic": "Strings"
+        },
+        {
+            "question": "Which of the following is the correct way to use the 'try...except' block?",
+            "options": [
+                "try:\n    # code\nexcept:\n    # code",
+                "try:\n    # code\ncatch:\n    # code",
+                "try:\n    # code\nexcept Exception:\n    # code",
+                "All are correct"
+            ],
+            "answer": "try:\n    # code\nexcept Exception:\n    # code",
+            "topic": "Exceptions"
+        },
+        {
+            "question": "How many spaces should be around commas?",
+            "options": ["0", "1", "2", "Any"],
+            "answer": "1",
+            "topic": "Formatting"
+        },
+        {
+            "question": "True or False: You should always include a blank line at the end of a file.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "topic": "Formatting"
+        },
+        {
+            "question": "Which is the correct way to annotate a function that takes a list of strings and returns a list of integers?",
+            "options": [
+                "def my_func(s: List[str]) -> List[int]:",
+                "def my_func(s: list[str]) -> list[int]:",
+                "def my_func(s: list) -> list:",
+                "def my_func(s: str[]) -> int[]:"
+            ],
+            "answer": "def my_func(s: List[str]) -> List[int]:",
+            "topic": "Typing"
+        },
+        {
+            "question": "What is the preferred way to check if a list is empty?",
+            "options": [
+                "if len(my_list) == 0:",
+                "if not my_list:",
+                "if my_list is []:",
+                "if my_list == []:"
+            ],
+            "answer": "if not my_list:",
+            "topic": "Booleans"
+        },
+        {
+            "question": "True or False: You should use parentheses around tuple expressions.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Formatting"
+        },
+        {
+            "question": "How should you name a class that inherits from multiple base classes?",
+            "options": ["MyClass", "my_class", "MyClassABC", "MySuperClass"],
+            "answer": "MyClass",
+            "topic": "Naming"
+        },
+        {
+            "question": "Which of the following is the correct way to define a class that inherits from another class?",
+            "options": [
+                "class MyClass : BaseClass:",
+                "class MyClass(BaseClass):",
+                "class MyClass extends BaseClass:",
+                "class MyClass inherits BaseClass:"
+            ],
+            "answer": "class MyClass(BaseClass):",
+            "topic": "Classes"
+        },
+        {
+            "question": "True or False: You should use list comprehensions for complex logic.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Comprehensions"
+        },
+        {
+            "question": "How should you order imports in a Python file?",
+            "options": [
+                "Alphabetical order",
+                "By length",
+                "Standard library, third-party, local",
+                "All are acceptable"
+            ],
+            "answer": "Standard library, third-party, local",
+            "topic": "Imports"
+        },
+        {
+            "question": "What is the recommended way to indent wrapped lines?",
+            "options": ["2 spaces", "4 spaces", "8 spaces", "Any"],
+            "answer": "4 spaces",
+            "topic": "Formatting"
+        },
+        {
+            "question": "True or False: You should add a blank line before a function definition inside a class.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Formatting"
+        },
+        {
+            "question": "Which is the correct way to annotate a function that takes a dictionary with string keys and integer values?",
+            "options": [
+                "def my_func(d: Dict[str, int]) -> None:",
+                "def my_func(d: dict[str, int]) -> None:",
+                "def my_func(d: dictionary) -> None:",
+                "def my_func(d: {str: int}) -> None:"
+            ],
+            "answer": "def my_func(d: Dict[str, int]) -> None:",
+            "topic": "Typing"
+        },
+        {
+            "question": "How should you format a class docstring?",
+            "options": [
+                "Just a short description",
+                "Detailed explanation",
+                "Short description, blank line, detailed explanation",
+                "Any format is acceptable"
+            ],
+            "answer": "Short description, blank line, detailed explanation",
+            "topic": "Docstrings"
+        },
+        {
+            "question": "True or False: You should use assertions to check for user input errors.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Exceptions"
+        },
+        {
+            "question": "Which is the correct way to define a generator function?",
+            "options": [
+                "def my_generator():",
+                "def my_generator() yield:",
+                "def my_generator():\n    yield",
+                "generator def my_generator():"
+            ],
+            "answer": "def my_generator():\n    yield",
+            "topic": "Functions"
+        },
+        {
+            "question": "How should you name a module that contains test code?",
+            "options": ["test_module", "module_test", "TestModule", "ModuleTest"],
+            "answer": "test_module",
+            "topic": "Naming"
+        },
+        {
+            "question": "True or False: You should use triple single quotes for multiline strings.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Strings"
+        },
+        {
+            "question": "Which of the following is the correct way to use the 'try...except...finally' block?",
+            "options": [
+                "try:\n    # code\nexcept:\n    # code\nfinally:\n    # code",
+                "try:\n    # code\ncatch:\n    # code\nfinally:\n    # code",
+                "try:\n    # code\nexcept Exception:\n    # code\nfinally:\n    # code",
+                "All are correct"
+            ],
+            "answer": "try:\n    # code\nexcept Exception:\n    # code\nfinally:\n    # code",
+            "topic": "Exceptions"
+        },
+        {
+            "question": "How many spaces should be around keyword arguments?",
+            "options": ["0", "1", "2", "Any"],
+            "answer": "0",
+            "topic": "Formatting"
+        },
+        {
+            "question": "True or False: You should always include a newline character at the end ofa file.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "topic": "Formatting"
+        },
+        {
+            "question": "Which is the correct way to annotate a function that takes a variable number of string arguments?",
+            "options": [
+                "def my_func(*args: str) -> None:",
+                "def my_func(args: *str) -> None:",
+                "def my_func(*args: List[str]) -> None:",
+                "def my_func(*args: Sequence[str]) -> None:"
+            ],
+            "answer": "def my_func(*args: str) -> None:",
+            "topic": "Typing"
+        },
+        {
+            "question": "What is the preferred way to check if a string is empty?",
+            "options": [
+                "if len(my_string) == 0:",
+                "if not my_string:",
+                "if my_string is '':",
+                "if my_string == '':"
+            ],
+            "answer": "if not my_string:",
+            "topic": "Booleans"
+        },
+        {
+            "question": "True or False: You should use parentheses around generator expressions.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "topic": "Formatting"
+        },
+        {
+            "question": "How should you name an abstract base class?",
+            "options": ["MyClass", "my_class", "MyClassABC", "MyAbstractClass"],
+            "answer": "MyClassABC",
+            "topic": "Naming"
+        },
+        {
+            "question": "Which of the following is the correct way to define an abstract method?",
+            "options": [
+                "def my_method(self):",
+                "@abstractmethod\ndef my_method(self):",
+                "abstract def my_method(self):",
+                "def @abstractmethod my_method(self):"
+            ],
+            "answer": "@abstractmethod\ndef my_method(self):",
+            "topic": "Classes"
+        },
+        {
+            "question": "True or False: You should use list comprehensions for side effects.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Comprehensions"
+        },
+        {
+            "question": "How should you group imports when using 'from ... import ...'?",
+            "options": [
+                "All in one line",
+                "One import per line",
+                "Group by module",
+                "Group by standard library, third-party, local"
+            ],
+            "answer": "One import per line",
+            "topic": "Imports"
+        },
+        {
+            "question": "What is the recommended way to handle long strings?",
+            "options": [
+                "Concatenation",
+                "Backslashes",
+                "Parentheses",
+                "Triple quotes"
+            ],
+            "answer": "Parentheses",
+            "topic": "Strings"
+        },
+        {
+            "question": "True or False: You should add a blank line before a class-level attribute.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Formatting"
+        },
+        {
+            "question": "Which is the correct way to annotate a function that takes a function as an argument?",
+            "options": [
+                "def my_func(f: Function) -> None:",
+                "def my_func(f: Callable) -> None:",
+                "def my_func(f: def()) -> None:",
+                "def my_func(f: ()) -> None:"
+            ],
+            "answer": "def my_func(f: Callable) -> None:",
+            "topic": "Typing"
+        },
+        {
+            "question": "How should you format a module docstring?",
+            "options": [
+                "Just a short description",
+                "Detailed explanation",
+                "Short description, blank line, detailed explanation",
+                "Any format is acceptable"
+            ],
+            "answer": "Short description, blank line, detailed explanation",
+            "topic": "Docstrings"
+        },
+        {
+            "question": "True or False: You should use assertions to check for unreachable code.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Exceptions"
+        },
+        {
+            "question": "Which is the correct way to define a data class?",
+            "options": [
+                "class MyClass:",
+                "@dataclass\nclass MyClass:",
+                "data class MyClass:",
+                "class @dataclass MyClass:"
+            ],
+            "answer": "@dataclass\nclass MyClass:",
+            "topic": "Classes"
+        },
+        {
+            "question": "How should you name a variable that represents a file handle?",
+            "options": ["file", "f", "fh", "file_handle"],
+            "answer": "f",
+            "topic": "Naming"
+        },
+        {
+            "question": "True or False: You should use raw strings for regular expressions.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "topic": "Strings"
+        },
+        {
+            "question": "Which of the following is the correct way to use the 'try...except...else...finally' block?",
+            "options": [
+                "try:\n    # code\nexcept:\n    # code\nelse:\n    # code\nfinally:\n    # code",
+                "try:\n    # code\ncatch:\n    # code\nelse:\n    # code\nfinally:\n    # code",
+                "try:\n    # code\nexcept Exception:\n    # code\nelse:\n    # code\nfinally:\n    # code",
+                "All are correct"
+            ],
+            "answer": "try:\n    # code\nexcept Exception:\n    # code\nelse:\n    # code\nfinally:\n    # code",
+            "topic": "Exceptions"
+        },
+        {
+            "question": "How many spaces should be around the colon in a dictionary?",
+            "options": ["0", "1", "2", "Any"],
+            "answer": "1",
+            "topic": "Formatting"
+        },
+        {
+            "question": "True or False: You should always include a copyright notice in every file.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Comments"
+        },
+        {
+            "question": "Which is the correct way to annotate a function that takes a list of mixed types?",
+            "options": [
+                "def my_func(l: List[Any]) -> None:",
+                "def my_func(l: List) -> None:",
+                "def my_func(l: list) -> None:",
+                "def my_func(l: Sequence[Any]) -> None:"
+            ],
+            "answer": "def my_func(l: List[Any]) -> None:",
+            "topic": "Typing"
+        },
+        {
+            "question": "What is the preferred way to check if a variable is not None?",
+            "options": [
+                "if var != None:",
+                "if var is not None:",
+                "if var:",
+                "if not var is None:"
+            ],
+            "answer": "if var is not None:",
+            "topic": "Booleans"
+        },
+        {
+            "question": "True or False: You should use parentheses around named tuples.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Formatting"
+        },
+        {
+            "question": "How should you name a mixin class?",
+            "options": ["MyMixin", "my_mixin", "MyMixinClass", "MixinMyClass"],
+            "answer": "MyMixin",
+            "topic": "Naming"
+        },
+        {
+            "question": "Which of the following is the correct way to define a class that uses a mixin?",
+            "options": [
+                "class MyClass with MyMixin:",
+                "class MyClass(MyMixin):",
+                "class MyClass includes MyMixin:",
+                "class MyClass : MyMixin:"
+            ],
+            "answer": "class MyClass(MyMixin):",
+            "topic": "Classes"
+        },
+        {
+            "question": "True or False: You should use list comprehensions for complex filtering and mapping.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Comprehensions"
+        },
+        {
+            "question": "How should you handle circular imports?",
+            "options": [
+                "Avoid them",
+                "Use 'import ... as ...'",
+                "Use conditional imports",
+                "All are acceptable"
+            ],
+            "answer": "Avoid them",
+            "topic": "Imports"
+        },
+        {
+            "question": "What is the recommended way to format long method chains?",
+            "options": [
+                "All on one line",
+                "One method call per line, indented",
+                "One method call per line, aligned",
+                "Any format is acceptable"
+            ],
+            "answer": "One method call per line, indented",
+            "topic": "Formatting"
+        },
+        {
+            "question": "True or False: You should add a blank line before a multi-line statement.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Formatting"
+        },
+        {
+            "question": "Which is the correct way to annotate a function that returns a dictionary with string keys and values of mixed types?",
+            "options": [
+                "def my_func(d: Dict[str, Any]) -> None:",
+                "def my_func(d: Dict[str]) -> None:",
+                "def my_func(d: dict) -> None:",
+                "def my_func(d: {str}) -> None:"
+            ],
+            "answer": "def my_func(d: Dict[str, Any]) -> None:",
+            "topic": "Typing"
+        },
+        {
+            "question": "How should you format a script's docstring?",
+            "options": [
+                "Just a short description",
+                "Detailed explanation",
+                "Short description, blank line, detailed explanation",
+                "Any format is acceptable"
+            ],
+            "answer": "Short description, blank line, detailed explanation",
+            "topic": "Docstrings"
+        },
+        {
+            "question": "True or False: You should use assertions to check for resource exhaustion.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Exceptions"
+        },
+        {
+            "question": "Which is the correct way to define a context manager?",
+            "options": [
+                "class MyContextManager:",
+                "with class MyContextManager:",
+                "class MyContextManager with:",
+                "class MyContextManager(contextlib.ContextManager):"
+            ],
+            "answer": "class MyContextManager:",
+            "topic": "Classes"
+        },
+        {
+            "question": "How should you name a variable that represents a database connection?",
+            "options": ["db", "conn", "connection", "database_connection"],
+            "answer": "conn",
+            "topic": "Naming"
+        },
+        {
+            "question": "True or False: You should use Unicode strings for all text.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "topic": "Strings"
+        },
+        {
+            "question": "Which of the following is the correct way to use the 'try...except...else' block?",
+            "options": [
+                "try:\n    # code\nexcept:\n    # code\nelse:\n    # code",
+                "try:\n    # code\ncatch:\n    # code\nelse:\n    # code",
+                "try:\n    # code\nexcept Exception:\n    # code\nelse:\n    # code",
+                "All are correct"
+            ],
+            "answer": "try:\n    # code\nexcept Exception:\n    # code\nelse:\n    # code",
+            "topic": "Exceptions"
+        },
+        {
+            "question": "How many spaces should be around the assignment operator in a function call with keyword arguments?",
+            "options": ["0", "1", "2", "Any"],
+            "answer": "0",
+            "topic": "Formatting"
+        },
+        {
+            "question": "True or False: You should always include a version number in your module docstring.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Docstrings"
+        },
+        {
+            "question": "Which is the correct way to annotate a function that takes a variable number of arguments of different types?",
+            "options": [
+                "def my_func(*args: Any) -> None:",
+                "def my_func(*args) -> None:",
+                "def my_func(*args: object) -> None:",
+                "def my_func(*args: tuple) -> None:"
+            ],
+            "answer": "def my_func(*args: Any) -> None:",
+            "topic": "Typing"
+        },
+        {
+            "question": "What is the preferred way to check if a variable is an instance of a specific class?",
+            "options": [
+                "if type(var) is MyClass:",
+                "if isinstance(var, MyClass):",
+                "if var.__class__ is MyClass:",
+                "if var is MyClass:"
+            ],
+            "answer": "if isinstance(var, MyClass):",
+            "topic": "Booleans"
+        },
+        {
+            "question": "True or False: You should use parentheses around expressions in return statements.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "topic": "Formatting"
+        },
+        {
+            "question": "How should you name a class that represents a data access object (DAO)?",
+            "options": ["MyDAO", "my_dao", "MyDataAccessObject", "DataAccessObject"],
+            "answer": "MyDAO",
+            "topic": "Naming"
+        },
+        {
+            "question": "Which of the following is the correct way to define a class that uses a decorator to add functionality?",
+            "options": [
+                "class MyClass with @my_decorator:",
+                "@my_decorator\nclass MyClass:",
+                "class @my_decorator MyClass:",
+                "class MyClass : @my_decorator:"
+            ],
+            "answer": "@my_decorator\nclass MyClass:",
+            "topic": "Decorators"
+        }
+    ]
+}
+
