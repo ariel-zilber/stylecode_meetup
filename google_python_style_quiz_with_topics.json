@@ -1,0 +1,108 @@
+{
+    "data": [
+        {
+            "question": "True or False: You should use semicolons to separate two Python statements on the same line if they are short.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "False",
+            "topic": "Statements"
+        },
+        {
+            "question": "What is the recommended line length limit for Python code?",
+            "options": [
+                "72 characters",
+                "80 characters",
+                "100 characters",
+                "120 characters"
+            ],
+            "answer": "80 characters",
+            "topic": "Formatting"
+        },
+        {
+            "question": "Which of the following is NOT a valid reason to use 'from x import y as z'?",
+            "options": [
+                "y is an inconveniently long name",
+                "y is a keyword in your code",
+                "You want to rename it for fun",
+                "There are two modules named y being imported"
+            ],
+            "answer": "You want to rename it for fun",
+            "topic": "Imports"
+        },
+        {
+            "question": "True or False: Assertions (assert) are allowed to enforce preconditions in production code.",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "False",
+            "topic": "Exceptions"
+        },
+        {
+            "question": "Which of these is a valid docstring summary line according to the guide?",
+            "options": [
+                "Returns user preferences.",
+                "return user preferences",
+                "This function returns user preferences.",
+                "Get preferences"
+            ],
+            "answer": "Returns user preferences.",
+            "topic": "Docstrings"
+        },
+        {
+            "question": "How should you handle unused arguments in a function?",
+            "options": [
+                "Prefix with _",
+                "Delete them at the start of the function with a comment",
+                "Use *args to ignore them",
+                "Just leave them"
+            ],
+            "answer": "Delete them at the start of the function with a comment",
+            "topic": "Function Arguments"
+        },
+        {
+            "question": "Which of the following is NOT an acceptable import format?",
+            "options": [
+                "import os",
+                "import os, sys",
+                "from collections.abc import Mapping, Sequence",
+                "from typing import Any, Optional"
+            ],
+            "answer": "import os, sys",
+            "topic": "Imports"
+        },
+        {
+            "question": "Which is the best string formatting method per the guide?",
+            "options": [
+                "'score: ' + str(score)",
+                "'score: {}'.format(score)",
+                "f'score: {score}'",
+                "All of the above are equally preferred"
+            ],
+            "answer": "f'score: {score}'",
+            "topic": "Strings"
+        },
+        {
+            "question": "True or False: It is okay to rely on implicit boolean evaluation of empty lists in Python (if not my_list:).",
+            "options": [
+                "True",
+                "False"
+            ],
+            "answer": "True",
+            "topic": "Booleans"
+        },
+        {
+            "question": "When should you use staticmethod according to Google\u2019s style guide?",
+            "options": [
+                "Whenever no self is used",
+                "Never",
+                "Only when forced by external API integration",
+                "Always for helper functions"
+            ],
+            "answer": "Only when forced by external API integration",
+            "topic": "Decorators"
+        }
+    ]
+}
